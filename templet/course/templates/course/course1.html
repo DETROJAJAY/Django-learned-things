@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <style>
+        body{
+            background-color: black;
+            color: beige;
+        }
+    </style> -->
+    <link rel = "stylesheet" href="{% static 'course/css/style.css' %}" />
+    <link rel = "stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Django</title>
+</head>
+<body>
+    <h1>Hello DJ</h1>
+    {% if cname and sests %}
+    <h2>Course Name :{{cname | upper}} Time taken : {{duration | length}} Available seates are {{sests}}</h2>
+    <img src="{% static 'course/image/ss.png' %}" alt="SS" />
+    <img src="{% get_static_prefix %}image/ss2.jpg" alt="SS" />
+    {% endif %}
+    <form action = "">
+        <input type="button" value="Click Me" onclick="dis()" />
+    </form>
+    <script src = "{% static 'course/js/all.js' %}"></script>
+</body>
+</html>
