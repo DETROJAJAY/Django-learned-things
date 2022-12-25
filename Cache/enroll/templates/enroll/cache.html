@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load cache %} 1
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Try Cache</title>
+    </head>
+    <body>
+        <h1> Cache 1 </h1>
+        <h1> Cache 2 </h1>
+        <h1> Cache 3 </h1><br>
+        {%cache 30 course%}        html file ma koi ak block cache krva mate aa 3 tag lakhvan thai   2
+        <h1> Cache 4 </h1>
+        <h1> Cache 5 </h1>
+        <h1> Cache 6 </h1>
+        {%endcache course%}         3
+    </body>
+</html>

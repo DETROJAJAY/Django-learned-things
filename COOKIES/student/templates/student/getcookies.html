@@ -1,0 +1,26 @@
+Get cookies
+
+<h1> Get SSession</h1>
+
+{% for key in ky %}
+    {{key}}
+{% endfor %}<hr>
+
+
+{% for i,j in it %}
+{{i}}
+{{j}}<br>
+{% endfor %}<br>
+{{it}}<br><hr>
+
+{{ag}}<hr>
+
+{{name}}<br>
+{{lname}}<br>
+{{request.session.get_session_cookie_age}} <br>
+{{request.session.get_expiry_age}} <br>
+{{request.session.get_expiry_date}} <br>
+{{request.session.get_expire_at_browser_close}} <br>
+
+<h3> Get Set Cookies<h3>
+    {{test}}
