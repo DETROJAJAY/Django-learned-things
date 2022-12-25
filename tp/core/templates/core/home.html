@@ -1,0 +1,7 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Home {% endblock title %}
+
+{% block content %} <h2> I am Home page {{d}}</h2> 
+{% include 'core/top.html' with p='php' only %}
+{% endblock content %}
