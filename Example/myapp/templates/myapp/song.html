@@ -1,0 +1,59 @@
+<title> Scholl data </title>
+<html>
+
+<h3> Song Information </h3>
+<body>
+    <table>
+        <th>song id</th>
+        <th>song name</th>
+        <th>Duration</th>
+        <th>Writer by</th>
+        {% for i in data1 %}
+            <tr>
+                <td> {{i.id}}</td>
+                <td> {{i.song_name}}</td>
+                <td>{{i.song_duration}}</td>
+                <td> {{i.written_by}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+<h3> Song Information filter by time</h3>
+<body>
+    <table>
+        <th>song id</th>
+        <th>song name</th>
+        <th>Duration</th>
+        <th>Writer by</th>
+        {% for i in data2 %}
+            <tr>
+                <td> {{i.id}}</td>
+                <td> {{i.song_name}}</td>
+                <td>{{i.song_duration}}</td>
+                <td> {{i.written_by}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+<h3> Song Information filter by name</h3>
+<body>
+    <table>
+        <th>song id</th>
+        <th>song name</th>
+        <th>Duration</th>
+        <th>Writer by</th>
+        {% for i in data3 %}
+            <tr>
+                <td> {{i.id}}</td>
+                <td> {{i.song_name}}</td>
+                <td>{{i.song_duration}}</td>
+                <td> {{i.written_by}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+
+</html>

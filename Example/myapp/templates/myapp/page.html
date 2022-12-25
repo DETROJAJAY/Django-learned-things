@@ -1,0 +1,65 @@
+<title> Scholl data </title>
+<html>
+
+<h3> Page Information </h3>
+<body>
+    <table>
+        <th>user id</th>
+        <th>Page Name</th>
+        <th>Page Cotegoriy</th>
+        <th>Last Update</th>
+        <th>Usr</th>
+        {% for i in data1 %}
+            <tr>
+                <td> {{i.usr_id}}</td>
+                <td> {{i.page_name}}</td>
+                <td>{{i.page_cat}}</td>
+                <td> {{i.page_pdate}}</td>
+                <td>{{i.usr}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+<h3> Page Information filter by date </h3>
+<body>
+    <table>
+        <th>user id</th>
+        <th>Page Name</th>
+        <th>Page Cotegoriy</th>
+        <th>Last Update</th>
+        <th>Usr</th>
+        {% for i in data2 %}
+            <tr>
+                <td> {{i.usr_id}}</td>
+                <td> {{i.page_name}}</td>
+                <td>{{i.page_cat}}</td>
+                <td> {{i.page_pdate}}</td>
+                <td>{{i.usr}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+<h3> Page Information by name </h3>
+<body>
+    <table>
+        <th>user id</th>
+        <th>Page Name</th>
+        <th>Page Cotegoriy</th>
+        <th>Last Update</th>
+        <th>Usr</th>
+        {% for i in data3 %}
+            <tr>
+                <td> {{i.usr_id}}</td>
+                <td> {{i.page_name}}</td>
+                <td>{{i.page_cat}}</td>
+                <td> {{i.page_pdate}}</td>
+                <td>{{i.usr}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+
+</html>

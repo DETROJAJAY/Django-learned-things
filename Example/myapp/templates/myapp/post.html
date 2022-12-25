@@ -1,0 +1,63 @@
+<title> Scholl data </title>
+<html>
+<h3> Post Information </h3>
+<body>
+    <table>
+        <th>Post id</th>
+        <th>Post title</th>
+        <th>post catagori</th>
+        <th>post last update</th>
+        <th>posted by user</th>
+        {% for i in data1 %}
+            <tr>
+                <td> {{i.id}}</td>
+                <td> {{i.post_title}}</td>
+                <td>{{i.post_cat}}</td>
+                <td> {{i.post_pdate}}</td>
+                <td>{{i.usr_id}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+<h3> Post Information filter by date </h3>
+<body>
+    <table>
+        <th>Post id</th>
+        <th>Post title</th>
+        <th>post catagori</th>
+        <th>post last update</th>
+        <th>posted by user</th>
+        {% for i in data2 %}
+            <tr>
+                <td> {{i.id}}</td>
+                <td> {{i.post_title}}</td>
+                <td>{{i.post_cat}}</td>
+                <td> {{i.post_pdate}}</td>
+                <td>{{i.usr_id}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+<h3> Post Information filter by user name </h3>
+<body>
+    <table>
+        <th>Post id</th>
+        <th>Post title</th>
+        <th>post catagori</th>
+        <th>post last update</th>
+        <th>posted by user</th>
+        {% for i in data3 %}
+            <tr>
+                <td> {{i.id}}</td>
+                <td> {{i.post_title}}</td>
+                <td>{{i.post_cat}}</td>
+                <td> {{i.post_pdate}}</td>
+                <td>{{i.usr_id}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
