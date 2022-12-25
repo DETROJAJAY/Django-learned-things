@@ -1,0 +1,119 @@
+<body>
+    <table>
+        <h3>Student Information</h3>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Fees</th>
+        {% for i in st %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.fees}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <table>
+        <h3>Teacher Information</h3>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Date</th>
+        <th>Salary</th>
+        {% for j in th %}
+            <tr>
+                <td>{{j.id}}</td>
+                <td>{{j.name}}</td>
+                <td>{{j.age}}</td>
+                <td>{{j.date}}</td>
+                <td>{{j.salary}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <table>
+        <h3>Contractor Information</h3>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Date</th>
+        <th>Paymet</th>
+        {% for j in ct %}
+            <tr>
+                <td>{{j.id}}</td>
+                <td>{{j.name}}</td>
+                <td>{{j.age}}</td>
+                <td>{{j.date}}</td>
+                <td>{{j.payment}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+
+<body>
+    <table>
+        <h3>Student Information</h3>
+        <th>ID</th>
+        <th>cName</th>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>City</th>
+        {% for i in st %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.cname}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.roll}}</td>
+                <td>{{i.city}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <table>
+        <h3>examcenter Information</h3>
+        <th>ID</th>
+        <th>cName</th>
+        <th>city</th>
+        {% for k in ex %}
+            <tr>
+                <td>{{k.id}}</td>
+                <td>{{k.cname}}</td>
+                <td>{{k.city}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+
+
+<body>
+    <table>
+        <h3>ExamCenter2 Information</h3>
+        <th>ID</th>
+        <th>cName</th>
+        <th>City</th>
+        {% for i in ec2 %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.cname}}</td>
+                <td>{{i.city}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <table>
+        <h3>Myexamcenter Information</h3>
+        <th>ID</th>
+        <th>cName</th>
+        <th>city</th>
+        {% for k in myex %}
+            <tr>
+                <td>{{k.id}}</td>
+                <td>{{k.cname}}</td>
+                <td>{{k.city}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
